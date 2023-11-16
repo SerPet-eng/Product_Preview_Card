@@ -1,0 +1,15 @@
+:root {
+  --clr-primary-darkCyan: hsl(158, 36%, 37%);
+  --clr-primary-Cream: hsl(30, 38%, 92%);
+  --clr-neutral-VdarkBlue: hsl(212, 21%, 14%);
+  --clr-neutral-DgrayishBlue: hsl(228, 12%, 48%);
+  --clr-neutra-white: hsl(0, 0%, 100%);
+
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --ff-Fraunces: "Fraunces", serif;
+  --ff-Montserrat: "Montserrat", sans-serif;
+
+  --fs-paragraph: 14px;
+}
