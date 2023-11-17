@@ -3,7 +3,7 @@
   --clr-primary-Cream: hsl(30, 38%, 92%);
   --clr-neutral-VdarkBlue: hsl(212, 21%, 14%);
   --clr-neutral-DgrayishBlue: hsl(228, 12%, 48%);
-  --clr-neutra-white: hsl(0, 0%, 100%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
 
   --fw-500: 500;
   --fw-700: 700;
@@ -12,4 +12,35 @@
   --ff-Montserrat: "Montserrat", sans-serif;
 
   --fs-paragraph: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-Montserrat);
+  background-color: var(--clr-primary-Cream);
+}
+
+.main {
+  margin: 1rem;
+}
+
+.hero {
+  margin: 0;
+  font-size: 0;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-neutral-white);
 }
