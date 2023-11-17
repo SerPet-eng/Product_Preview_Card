@@ -43,4 +43,61 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--clr-neutral-white);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.card--content h5 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--clr-neutral-DgrayishBlue);
+  font-weight: var(--fw-500);
+  margin: 0.75rem 0 0.75rem 0;
+}
+
+.card--price {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.price--hero {
+  margin-right: 1rem;
+  font-family: var(--ff-Fraunces);
+  color: var(--clr-primary-darkCyan);
+}
+
+.price--before {
+  text-decoration: line-through;
+  color: var(--clr-neutral-DgrayishBlue);
+}
+
+.card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  font-family: var(--ff-Montserrat);
+  font-weight: var(--fw-700);
+  color: var(--clr-neutral-white);
+  background-color: var(--clr-primary-darkCyan);
+  border: none;
+  border-radius: 10px;
+}
+
+.card button img {
+  margin-right: 0.5rem;
+}
+
+.content--details {
+  margin: 0.3rem;
+}
+
+.content--details h1 {
+  font-family: var(--ff-Fraunces);
+  margin-bottom: 1rem;
+}
+
+.content--details p {
+  line-height: 1.75rem;
+  font-size: var(--fs-paragraph);
 }
