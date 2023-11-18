@@ -108,6 +108,7 @@ body {
 }
 
 .content--details p {
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   font-size: var(--fs-paragraph);
+  color: var(--clr-neutral-DgrayishBlue);
 }
