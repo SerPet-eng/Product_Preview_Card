@@ -26,6 +26,8 @@ body {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
 }
 
@@ -116,5 +118,18 @@ body {
 @media screen and (min-width: 800px) {
   .card {
     background-color: black;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .hero img {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .card {
+    padding: 2em;
+    border-radius: 0 1rem 1rem 0;
   }
 }
