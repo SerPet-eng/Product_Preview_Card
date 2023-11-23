@@ -30,6 +30,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  box-shadow: 0 0 5px 4px var(--clr-neutral-DgrayishBlue);
+  border-radius: 1rem;
 }
 
 .hero {
