@@ -90,6 +90,7 @@ body {
 
 .card button:hover {
   background-color: var(--clr-primary-darkCyan-hover);
+  cursor: pointer;
 }
 
 .card button:active {
