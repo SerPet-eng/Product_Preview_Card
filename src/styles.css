@@ -116,10 +116,6 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-  .card {
-    background-color: black;
-  }
-
   .main {
     flex-direction: row;
     margin-top: 6rem;
