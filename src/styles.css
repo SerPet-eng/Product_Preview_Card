@@ -1,6 +1,6 @@
 :root {
   --clr-primary-darkCyan: hsl(158, 36%, 37%);
-  --clr-primary-darkCyan-hover: hsl(158, 80%, 37%);
+  --clr-primary-darkCyan-hover: hsl(158, 36%, 20%);
   --clr-primary-Cream: hsl(30, 38%, 92%);
   --clr-neutral-VdarkBlue: hsl(212, 21%, 14%);
   --clr-neutral-DgrayishBlue: hsl(228, 12%, 48%);
@@ -97,7 +97,7 @@ body {
 }
 
 .card button:active {
-  background-color: yellowgreen;
+  background-color: var(--clr-primary-darkCyan);
 }
 
 .card button img {
