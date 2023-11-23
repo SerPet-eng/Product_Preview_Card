@@ -23,6 +23,7 @@
 body {
   font-family: var(--ff-Montserrat);
   background-color: var(--clr-primary-Cream);
+  user-select: none;
 }
 
 .main {
