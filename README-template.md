@@ -1,6 +1,6 @@
 # Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -29,15 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Product Preview Mobile](./screenshots/Product%20Preview%20Mobile.png)
+For my **Mobile** Version
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Product Preview Desktop](./screenshots//Product%20Preview%20Desktop.jpeg)
+For my **Desktop** Version
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Product Preview Button Hover](./screenshots/Product%20Preview%20Btn%20Hover.png)
+For my **Button** when it hovers
 
 ### Links
 
@@ -51,61 +50,88 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+So I was used to make a conditional statement using **React** in terms of rendering _images_. Jumping back to JS surely take me a while to refresh some of the things that I've learn. Here is what I've learned:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const image = document.getElementById('responsiveImage');
+
+function changeImage() {
+  if (window.innerWidth <= 800) {
+    image.src = './images/image-product-mobile.jpg';
+  } else {
+    image.src = './images/image-product-desktop.jpg';
+  }
 }
+
+window.addEventListener('resize', changeImage);
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Using `window.innerWidth` to change the image when it met the 800px width.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+**Also**
+
+I've encounter some error when doing some JS. Which is called _image is null_. This got me confused but by researching, I found out that I need to add this specific code to my JS so that it loads properly in a web.
+
+```js
+document.addEventListener('DOMContentLoaded', function () {});
+```
+
+This somehow fix the problem.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Dealing with CSS sometimes **scares me**, and one of the reason is that when I start _styling_ the web, I ending up coding a lot of CSS properties, For instance this part of my _styles.css_:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+```css
+.card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  font-family: var(--ff-Montserrat);
+  font-weight: var(--fw-700);
+  color: var(--clr-neutral-white);
+  background-color: var(--clr-primary-darkCyan);
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+```
+
+Also this one:
+
+```css
+.card {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-neutral-white);
+  border-radius: 0 0 1rem 1rem;
+}
+```
+
+This works and it meet the requirements of looking somewhat exactly to the design.
+
+When styling a web using CSS, **Is this normal?**
+
+> **Note:** I quite enjoy styling my web using CSS but in terms of 'good practice', I'm not sure if I'm doing such a good job of doing a 'good practice', especially with abundance of using `display: flex` a lot in my CSS.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3school](https://www.w3schools.com/) - This helps me to refresh my knowledge on using CSS
+- [MDN](https://developer.mozilla.org/en-US/) - This helps me to refresh my knowledge on using JS and some of the concepts that has been useful to this _challenge_ which is **changing the image**, according to its `width`.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Netlify](https://magnificent-churros-50a683.netlify.app/)
+- Frontend Mentor - [@SerPet-eng](https://www.frontendmentor.io/profile/SerPet-eng)
+- Twitter - [@dchristian796](https://twitter.com/dchristian796)
+- Facebook - [Christian Ulang de Guzman](https://www.facebook.com/christian.deguzman.1840/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I want to acknowledge my friends and family that supports me on everything. This maybe not much but this is just how I can repay them for now. By doing what I love and want to do in the future.
