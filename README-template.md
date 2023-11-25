@@ -80,7 +80,19 @@ I've encounter some error when doing some JS. Which is called _image is null_. T
 document.addEventListener('DOMContentLoaded', function () {});
 ```
 
-This somehow fix the problem.
+This somehow help me to solve the _image is null_ problem.
+
+### Bugs
+
+The `hero` image when it loads for the first time, it became this image: `image-product-mobile.jpg`.
+
+**BUT**
+
+When I refresh the page it became `image-product-desktop.jpg`.
+
+> The **idea** was, when the screen is about _370px_, the `hero` image is `image-product-mobile.jpg`, but when the screen is about _800px_, the image will turn into `image-product-desktop.jpg`.
+
+#### Image of the bug:
 
 ### Continued development
 
