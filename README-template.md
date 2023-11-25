@@ -12,11 +12,10 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+    - [Bugs](#bugs)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -82,18 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {});
 
 This somehow help me to solve the _image is null_ problem.
 
-### Bugs
-
-The `hero` image when it loads for the first time, it became this image: `image-product-mobile.jpg`.
-
-**BUT**
-
-When I refresh the page it became `image-product-desktop.jpg`.
-
-> The **idea** was, when the screen is about _370px_, the `hero` image is `image-product-mobile.jpg`, but when the screen is about _800px_, the image will turn into `image-product-desktop.jpg`.
-
-#### Image of the bug:
-
 ### Continued development
 
 Dealing with CSS sometimes **scares me**, and one of the reason is that when I start _styling_ the web, I ending up coding a lot of CSS properties, For instance this part of my _styles.css_:
@@ -131,6 +118,28 @@ This works and it meet the requirements of looking somewhat exactly to the desig
 When styling a web using CSS, **Is this normal?**
 
 > **Note:** I quite enjoy styling my web using CSS but in terms of 'good practice', I'm not sure if I'm doing such a good job of doing a 'good practice', especially with abundance of using `display: flex` a lot in my CSS.
+
+### Bugs
+
+The `hero` image when it loads for the first time, it became this image: `image-product-mobile.jpg`.
+
+**BUT**
+
+When I refresh the page it became `image-product-desktop.jpg`.
+
+> The **idea** was, when the screen is about _370px_, the `hero` image is `image-product-mobile.jpg`, but when the screen is about _800px_, the image will turn into `image-product-desktop.jpg`.
+
+#### Image of the bug:
+
+This is when the first load looks like:
+
+[Product Preview Bug 1](<./screenshots/Product%20Preview%20Bug%20(1).png>)
+
+Then this is when I 'refresh' or 'resize' the screen:
+
+[Product Preview Bug 1](<./screenshots/Product%20Preview%20Bug%20(2).png>)
+
+> **Question:** is this because on how I structure my `HTML` or my `CSS` ?
 
 ### Useful resources
 
