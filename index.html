@@ -20,16 +20,21 @@
   </head>
   <body>
     <main>
-      <img
-        srcset="
-          ./images/image-product-mobile.jpg   800w,
-          ./images/image-product-desktop.jpg 1200w
-        "
-        sizes="(max-width: 800px) 100vw, 1200px"
-        src="./images/image-product-desktop.jpg"
-        alt="Image of the Product"
-        id="main-img"
-      />
+      <picture>
+        <source
+          media="(min-width: 800px)"
+          srcset="./images/image-product-desktop.jpg"
+        />
+        <source
+          media="(min-width: 900px)"
+          srcset="./images/image-product-mobile.jpg"
+        />
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="Image of the Product"
+          id="main-img"
+        />
+      </picture>
       <div class="card">
         <div class="card-content">
           <p id="content-type">Perfume</p>

@@ -67,10 +67,15 @@ main {
   background-color: var(--clr-neutral-white);
 }
 
-.card--image img {
+#main-img {
   border-radius: 1rem 1rem 0 0;
   width: 100%;
 }
+
+/* .card--image img {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+} */
 
 #content-type {
   letter-spacing: 0.3rem;
