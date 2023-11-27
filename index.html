@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./src/styles.css">
-  <script src="./src/script.js"></script>
-
-  <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="main">
-    <div class="hero">
-      <img src="./images/image-product-mobile.jpg" alt="Image of the Perfume Product" id="responsiveImage">
-    </div>
-    <div class="card">
-      <div class="card--content">
-        <h5 class="content--prod">Perfume</h5>
-        <div class="content--details">
-          <h1 class="content--hero">Gabrielle Essence Eau De Parfum</h1>
-          <p class="content--desc">A floral, solar and voluptuous interpretation composed by Olivier Polge,
-            Perfumer-Creator for the House of CHANEL.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main>
+      <img
+        srcset="
+          ./images/image-product-mobile.jpg   800w,
+          ./images/image-product-desktop.jpg 1200w
+        "
+        sizes="(max-width: 800px) 100vw, 1200px"
+        src="./images/image-product-desktop.jpg"
+        alt="Image of the Product"
+        id="main-img"
+      />
+      <div class="card">
+        <div class="card-content">
+          <p id="content-type">Perfume</p>
+          <h1 id="content-title">Gabrielle Essence Eau De Parfum</h1>
+          <p id="content-paragraph">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
         </div>
+        <div class="card-price">
+          <h1>$149.99</h1>
+          <h4>$169.99</h4>
+        </div>
+        <button>
+          <img src="./images/icon-cart.svg" alt="Icon Cart" /> Add to Cart
+        </button>
       </div>
-      <div class="card--price">
-        <h1 class="price--hero">$149.99</h1>
-        <p class="price--before"> $169.99</p>
-      </div>
-      <button class="card--btn"> <img src="./images/icon-cart.svg" alt="Cart Icon"> Add to Cart</button>
-    </div>
-  </div>
+    </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
