@@ -49,20 +49,17 @@ body {
 
 /* ----- MAIN ----- */
 main {
-  margin: 1rem;
+  max-width: 800px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-}
-
-#hero-img {
-  width: 100%;
-  border-radius: 1rem 1rem 0 0;
 }
 
 .card {
   margin-top: -0.3rem;
   padding: 1rem;
-  border: 1px solid red;
   border-radius: 0 0 1rem 1rem;
   background-color: var(--clr-neutral-white);
 }
@@ -140,8 +137,20 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
+/* ----- MEDIA QUERIES ----- */
+
+/** 800px */
 @media screen and (min-width: 800px) {
   main {
     flex-direction: row;
+  }
+
+  #main-img {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .card {
+    margin: 0;
+    border-radius: 0 1rem 1rem 0;
   }
 }
